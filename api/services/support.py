@@ -46,6 +46,7 @@ class SupportService:
                     "Em breve você receberá um retorno."
                 ),
                 escalation_summary=escalation.summary_for_agent,
+                escalation_priority=escalation.priority,
                 needs_human_approval=False,
             )
 
@@ -72,6 +73,7 @@ class SupportService:
                 message_to_customer=resolution.message_to_customer,
                 action_taken=resolution.action,
                 escalation_summary=escalation.summary_for_agent,
+                escalation_priority=escalation.priority,
                 needs_human_approval=True,
             )
 

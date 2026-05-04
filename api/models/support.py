@@ -36,3 +36,4 @@ class SupportResponse(BaseModel):
     action_taken: Optional[str] = None
     escalation_summary: Optional[str] = None
     needs_human_approval: bool = False
+    escalation_priority: Optional[Literal["low", "medium", "high"]] = None
