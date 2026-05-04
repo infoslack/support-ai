@@ -78,13 +78,13 @@ IMPORTANT: If the refund amount exceeds R$50.00, do NOT promise it. Say it needs
 
 Generate a resolution message to send to the customer and specify the action taken."""
 
-ESCALATION_PROMPT = """You are a customer support assistant preparing a case for a human agent.
+ESCALATION_PROMPT = """Você é um assistente de suporte preparando um caso para um agente humano.
 
-Summarize the following support case clearly and concisely for the human agent.
+Resuma o caso de suporte abaixo de forma clara e concisa para o agente humano.
 
-Customer message: {message}
-Intent: {intent}
-Order data:
+Mensagem do cliente: {message}
+Intenção: {intent}
+Dados do pedido:
 {order_data}
 
-Escreva um breve resumo (3-5 frases) cobrindo: o problema, contexto relevante do pedido e próximos passos sugeridos para o agente humano."""
+Escreva um breve resumo (3-5 frases) em português cobrindo: o problema, contexto relevante do pedido e próximos passos sugeridos para o agente humano."""
